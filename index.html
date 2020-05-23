@@ -956,7 +956,7 @@
 
 			const quotes = [
 			  {
-			    "quote": " ",
+			    "quote": "Selamat hari raya lebaran semuanya!",
 			    "source": "---"
 			  },
 			  
@@ -984,7 +984,7 @@
 					var p = "translate(-50%,50%) scale("+o2+")";
 					document.getElementById("quote").innerHTML += txt.charAt(i);
 					i++;
-					$(".jam").css("opacity",o3);
+					$(".jam").css("transform",p).css("opacity",o3);
 					$(".bulat").css("transform",p).css("opacity",o2);
 					setTimeout(typeWriter, speed);
 				}
