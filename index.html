@@ -269,7 +269,7 @@
   			}
   		}
   		@media only screen and (max-width: 900px), screen and (max-height: 700px) {
-  			.jam,.ucapan{
+  			.jam{
   				transition: all 1s ease;
   			}
 			.jam{
@@ -277,20 +277,20 @@
 		  		transform: translate(-50%,calc(50% - 0px));
 		  	}
 		  	.ucapan{
-		  		font-size: 15pt;
+		  		font-size: 30pt;
 		  		transform: translate(-50%,calc(50% + 50px));
 		  	}
 		  	.quotes,.note{
-		  		font-size: 15pt;
+		  		font-size: 25pt;
 		  	}
 		  	.bulat{
-	  			width: 300px;
-	  			height: 300px;
+	  			width: 400px;
+	  			height: 400px;
 	  		}
   		}
   		@media only screen and (max-width: 500px){
   			.ucapan{
-		  		font-size: 10pt;
+		  		font-size: 30pt;
 		  	}
 		  	.quotes{
 		  		font-size: 7pt;
@@ -812,20 +812,17 @@
 			warna=1;
 			function gaming1(){
 				if (gaming){
-					fillblack();
+			
 					if (warna==1){
-						red();
+						green();
 					}
 					else if (warna==2) {
 						green();
 					}
 					else if (warna==3) {
-						blue();
+						green();
 					}
-					warna+=1;
-					if (warna==4){
-						warna=1;
-					}
+				
 				}
 			}
 			setInterval(gaming1, 4000);
@@ -984,7 +981,7 @@
 					var p = "translate(-50%,50%) scale("+o2+")";
 					document.getElementById("quote").innerHTML += txt.charAt(i);
 					i++;
-					$(".jam").css("transform",p).css("opacity",o3);
+					$(".ucapan").css("transform",p).css("opacity",o2);
 					$(".bulat").css("transform",p).css("opacity",o2);
 					setTimeout(typeWriter, speed);
 				}
